@@ -15,7 +15,7 @@ df = pd.read_csv(data_file)
 
 age_group = ['young', 'old']
 
-sentence_volume = {'upto20': 1-20, 'upto40': 21-40, 'uptp60': 41-60, 'upto80': 61-80, 'upto100': 81-100}
+sentence_volume = {'upto20': [1, 20], 'upto40': 21-40, 'uptp60': 41-60, 'upto80': 61-80, 'upto100': 81-100}
 
 number_of_letters = {'less20': 1-19, 'less40': 20-39, 'less60': 40-59, 'less80': 60-79, 'less100': 20-99}
 
