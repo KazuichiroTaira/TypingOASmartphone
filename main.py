@@ -26,10 +26,19 @@ trial_time = {'less1000': 1-999, 'less5000': 1000-4999, 'less10000': 5000-9999, 
 
 error_percent = {'noerror':0, 'errorover0.5': 0.5-0.999 'errorover1.0': 1.0-1.4999    'errorover1.5': 1.5-2.0, }
 
+print(age_group)
+
+
+
+
+
+
+'''
+
 x=0, .9<x<
 back_space = {}
 
-for ds in age_group:
+for ag in age_group:
 
     data = {}
     labels = ['young', 'old']
@@ -78,3 +87,5 @@ for ds in age_group:
     fig_name = f'{condition_label}.pdf'
     fig_file = os.path.join(FIG_FOLDER, fig_name)
     plt.savefig(fig_file)
+
+'''
