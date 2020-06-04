@@ -30,6 +30,10 @@ trial_time_range = ([1,1000], [1000,5000], [5000,10000], [10000,15000],
 error_percent_range = ([0,0.5], [0.5,1.0], [1.0,1.5], [1.5,2.0])
 
 
+
+
+
+
 #plt.hist(x, bins)
 #bins = np.(low, high, num of poll)
 #x = np.random.normal(low, high, num of poll)
