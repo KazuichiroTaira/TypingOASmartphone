@@ -16,20 +16,26 @@ df = pd.read_csv(data_file)
 age_group = ['young', 'old']
 
 sentence_volume_range = {'svr0': [1, 20], 'svr1': [20, 40], 'svr2': [40, 60], 'svr3': [60, 80], 'svr4': [80, 100]}
+sentence_volume_range_labels = list(sentence_volume_range.keys())
 
 number_of_letters_range = {'nlr0': [1, 20], 'nlr1': [20, 40], 'nlr2': [40, 60], 'nlr3': [60, 80], 'nlr4': [80, 100]}
+number_of_letters_range = list(number_of_letters_range.keys())
+
 
 trial_time_range = {'ttr0': [1, 1000], 'ttr2': [1000, 5000], 'ttr3': [5000, 10000], 'ttr4': [10000, 15000],
                     'ttr5': [15000, 20000], 'ttr6': [20000, 50000], 'ttr7': [50000, 100000],
                     'ttr8': [100000, 150000], 'ttr9': [150000, 200000]}
+trial_time_range = (trial_time_range.keys())
 
 error_percent_range = {'epr0': [0, 0.5], 'epr1': [0.5, 1.0], 'epr2': [1.0, 1.5], 'epr3': [1.5, 2.0]}
+error_percent_range = (error_percent_range.keys())
 
 frequency_of_backspace_range = {'fbr0': [0], 'fbr1': [1, 5], 'fbr2': [5, 10], 'fbr3': [10, 20], 'fbr4': [20, 30]}
+frequency_of_backspace_range = (frequency_of_backspace_range.keys())
 
 for ag in age_group:
 
-
+    '''
     print('ag',ag)
 
     print('svr0',[1, 20], 'svr1', [20, 40], 'svr2',[40, 60], 'svr3',[60, 80], 'svr4',[80, 100])
@@ -43,9 +49,9 @@ for ag in age_group:
     print('epr0',[0, 0.5], 'epr1',[0.5, 1.0], 'epr2', [1.0, 1.5], 'epr3',[1.5, 2.0])
 
     print('fbr0',[0], 'fbr1',[1, 5], 'fbr2',[5, 10], 'fbr3',[10, 20], 'fbr4',[20,30])
-
-
     '''
+
+
     data = {}
 
     sentence_volume_range_labels = ['svr0', 'svr1', 'svr2', 'svr3', 'svr4']
