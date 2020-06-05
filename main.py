@@ -138,7 +138,7 @@ for ag in age_group:
     fig_name = f'{condition_label}.pdf'
     fig_file = os.path.join(FIG_FOLDER, fig_name)
     plt.savefig(fig_file)
-    '''
+
 
 
 
