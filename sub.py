@@ -7,9 +7,7 @@ DATA_FOLDER = 'data'
 data_file = os.path.join(DATA_FOLDER, 'smartphone-typing.csv')
 df = pd.read_csv(data_file)
 
-print(df)
-
-
+#print(df)
 
 age_group = ['young', 'old']
 
@@ -17,6 +15,7 @@ n_age_group = len(age_group)
 
 
 is_young = df['age.group'] == 'young'
+is_old = df['age.group'] == 'old'
 
 # is_sentence_in_0_10 = [x in np.arange(0,10) for x in df['sentence']]
 # print(type(is_young))
@@ -24,6 +23,7 @@ is_young = df['age.group'] == 'young'
 #print(is_sentence_in_0_10)
 
 sentence_young = df[is_young]['sentence']
+#sentence_old = df[is_old]['sentence']
 print('max value', max(sentence_young))
 
 fig, ax = plt.subplots()
@@ -36,7 +36,7 @@ plt.show()
 #print(df[True, ])
 #print(df[])
 
-
+ 
 
 #print(df[df]['sentence'])
 
